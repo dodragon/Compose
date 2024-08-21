@@ -2,4 +2,6 @@
     <string name="app_name">Compose</string>
 
     <string name="main_back_toast">뒤로가기를 한번 더 누르면 종료됩니다.</string>
+    <string name="title_activity_box">BoxActivity</string>
+    <string name="title_activity_lazy_column">LazyColumnActivity</string>
 </resources>

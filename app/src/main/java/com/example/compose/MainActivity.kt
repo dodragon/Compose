@@ -1,5 +1,6 @@
 package com.example.compose
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Space
 import android.widget.Toast
@@ -21,6 +22,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.compose.base.BaseActivity
+import com.example.compose.exam.LazyColumnActivity
 import com.example.compose.ui.theme.ComposeTheme
 
 class MainActivity : BaseActivity() {
@@ -29,6 +31,8 @@ class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        startActivity(Intent(this, LazyColumnActivity::class.java))
+
         setContent {
             ComposeTheme {
                 Surface(
