@@ -13,6 +13,16 @@
         android:theme="@style/Theme.Compose"
         tools:targetApi="31">
         <activity
+            android:name=".NavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.Compose" />
+        <activity
+            android:name=".exam.TextFieldActivity"
+            android:exported="false"
+            android:label="@string/title_activity_text_field"
+            android:theme="@style/Theme.Compose" />
+        <activity
             android:name=".exam.ViewsActivity"
             android:exported="false"
             android:label="@string/title_activity_views"
