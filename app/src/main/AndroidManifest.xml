@@ -13,6 +13,11 @@
         android:theme="@style/Theme.Compose"
         tools:targetApi="31">
         <activity
+            android:name=".exam.VmExamActivity"
+            android:exported="false"
+            android:label="@string/title_activity_vm_exam"
+            android:theme="@style/Theme.Compose" />
+        <activity
             android:name=".exam.NavigationActivity"
             android:exported="false"
             android:label="@string/title_activity_navigation"

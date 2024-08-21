@@ -26,6 +26,7 @@ import com.example.compose.exam.LazyColumnActivity
 import com.example.compose.exam.NavigationActivity
 import com.example.compose.exam.TextFieldActivity
 import com.example.compose.exam.ViewsActivity
+import com.example.compose.exam.VmExamActivity
 import com.example.compose.ui.theme.ComposeTheme
 
 class MainActivity : BaseActivity() {
@@ -34,7 +35,7 @@ class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        startActivity(Intent(this, NavigationActivity::class.java))
+        startActivity(Intent(this, VmExamActivity::class.java))
 
         setContent {
             ComposeTheme {
