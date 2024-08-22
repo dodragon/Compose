@@ -18,6 +18,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.compose.base.BaseActivity
+import com.example.compose.feature.GalleryActivity
 import com.example.compose.feature.ObesityCalculateActivity
 import com.example.compose.feature.StopWatchActivity
 import com.example.compose.feature.web.WebActivity
@@ -41,7 +42,8 @@ class MainActivity : BaseActivity() {
     private val activityList = listOf(
         ObesityCalculateActivity::class.java,
         StopWatchActivity::class.java,
-        WebActivity::class.java
+        WebActivity::class.java,
+        GalleryActivity::class.java,
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

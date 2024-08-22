@@ -9,6 +9,8 @@ lifecycle = "2.8.4"
 activity-compose = "1.9.1"
 compose-bom = "2024.06.00"
 navigation = "2.7.7"
+pager = "0.34.0"
+coil = "1.4.0"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -27,6 +29,9 @@ ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
 navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation"  }
 viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+pager = { group = "com.google.accompanist", name = "accompanist-pager", version.ref = "pager" }
+pager-indicator = { group = "com.google.accompanist", name = "accompanist-pager-indicators", version.ref = "pager" }
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "agp" }

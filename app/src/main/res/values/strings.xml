@@ -13,4 +13,6 @@
     <string name="title_activity_obesity_calculate">ObesityCalculateActivity</string>
     <string name="title_activity_stop_watch">StopWatchActivity</string>
     <string name="title_activity_web">WebActivity</string>
+    <string name="title_activity_gallary">GallaryActivity</string>
+    <string name="title_activity_gallery">GalleryActivity</string>
 </resources>
