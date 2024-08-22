@@ -22,6 +22,7 @@ import com.example.compose.feature.GalleryActivity
 import com.example.compose.feature.HorizontalMeasureActivity
 import com.example.compose.feature.ObesityCalculateActivity
 import com.example.compose.feature.StopWatchActivity
+import com.example.compose.feature.XylophoneActivity
 import com.example.compose.feature.web.WebActivity
 import com.example.compose.ui.theme.ComposeTheme
 
@@ -46,6 +47,7 @@ class MainActivity : BaseActivity() {
         WebActivity::class.java,
         GalleryActivity::class.java,
         HorizontalMeasureActivity::class.java,
+        XylophoneActivity::class.java
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
