@@ -2,7 +2,6 @@ package com.example.compose
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
@@ -21,6 +20,7 @@ import androidx.compose.ui.unit.sp
 import com.example.compose.base.BaseActivity
 import com.example.compose.feature.ObesityCalculateActivity
 import com.example.compose.feature.StopWatchActivity
+import com.example.compose.feature.web.WebActivity
 import com.example.compose.ui.theme.ComposeTheme
 
 class MainActivity : BaseActivity() {
@@ -41,6 +41,7 @@ class MainActivity : BaseActivity() {
     private val activityList = listOf(
         ObesityCalculateActivity::class.java,
         StopWatchActivity::class.java,
+        WebActivity::class.java
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
