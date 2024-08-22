@@ -15,4 +15,6 @@
     <string name="title_activity_web">WebActivity</string>
     <string name="title_activity_gallary">GallaryActivity</string>
     <string name="title_activity_gallery">GalleryActivity</string>
+    <string name="title_activity_horizontal_mesure">HorizontalMesureActivity</string>
+    <string name="title_activity_horizontal_measure">HorizontalMeasureActivity</string>
 </resources>

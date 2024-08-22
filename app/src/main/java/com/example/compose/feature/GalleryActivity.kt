@@ -4,21 +4,18 @@ import android.Manifest
 import android.app.Application
 import android.content.ContentUris
 import android.content.pm.PackageManager
-import android.media.Image
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.pager.HorizontalPager
-import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.Text
@@ -66,7 +63,11 @@ class GalleryActivity : BaseActivity() {
         if(ContextCompat.checkSelfPermission(
                 this,
             Manifest.permission.READ_EXTERNAL_STORAGE,
-        ) == PackageManager.PERMISSION_GRANTED) {
+        ) == PackageManager.PERMISSION_GRANTED ||
+            ContextCompat.checkSelfPermission(
+                this,
+                Manifest.permission.READ_MEDIA_IMAGES,
+            ) == PackageManager.PERMISSION_GRANTED) {
             granted = true
         }
 
@@ -75,7 +76,11 @@ class GalleryActivity : BaseActivity() {
             HomeScreen(photoUris = viewModel.photoUris.value)
         }else {
             PermissionRequestScreen {
-                permissionLauncher.launch(Manifest.permission.READ_EXTERNAL_STORAGE)
+                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                    permissionLauncher.launch(Manifest.permission.READ_MEDIA_IMAGES)
+                }else {
+                    permissionLauncher.launch(Manifest.permission.READ_EXTERNAL_STORAGE)
+                }
             }
         }
     }
