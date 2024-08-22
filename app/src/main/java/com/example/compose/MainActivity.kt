@@ -20,6 +20,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.compose.base.BaseActivity
 import com.example.compose.feature.ObesityCalculateActivity
+import com.example.compose.feature.StopWatchActivity
 import com.example.compose.ui.theme.ComposeTheme
 
 class MainActivity : BaseActivity() {
@@ -39,6 +40,7 @@ class MainActivity : BaseActivity() {
 
     private val activityList = listOf(
         ObesityCalculateActivity::class.java,
+        StopWatchActivity::class.java,
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
