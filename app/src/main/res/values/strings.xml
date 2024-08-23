@@ -18,4 +18,5 @@
     <string name="title_activity_horizontal_mesure">HorizontalMesureActivity</string>
     <string name="title_activity_horizontal_measure">HorizontalMeasureActivity</string>
     <string name="title_activity_xylophone">XylophoneActivity</string>
+    <string name="title_activity_gps">GpsActivity</string>
 </resources>

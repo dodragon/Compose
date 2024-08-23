@@ -11,6 +11,10 @@ compose-bom = "2024.06.00"
 navigation = "2.7.7"
 pager = "0.34.0"
 coil = "1.4.0"
+fused-location-provider = "21.3.0"
+map-view = "19.0.0"
+google-android-libraries-mapsplatform-secrets-gradle-plugin = "2.0.1"
+appcompat = "1.7.0"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -32,10 +36,14 @@ viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose"
 pager = { group = "com.google.accompanist", name = "accompanist-pager", version.ref = "pager" }
 pager-indicator = { group = "com.google.accompanist", name = "accompanist-pager-indicators", version.ref = "pager" }
 coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+fused-location-provider = { group = "com.google.android.gms", name = "play-services-location", version.ref = "fused-location-provider" }
+map-view = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "map-view" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "agp" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
+google-android-libraries-mapsplatform-secrets-gradle-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "google-android-libraries-mapsplatform-secrets-gradle-plugin" }
 
 [bundles]
 
