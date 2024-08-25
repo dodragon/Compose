@@ -15,6 +15,8 @@ fused-location-provider = "21.3.0"
 map-view = "19.0.0"
 google-android-libraries-mapsplatform-secrets-gradle-plugin = "2.0.1"
 appcompat = "1.7.0"
+room = "2.6.1"
+ksp = "1.9.0-1.0.13"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -40,10 +42,17 @@ fused-location-provider = { group = "com.google.android.gms", name = "play-servi
 map-view = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "map-view" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 
+room = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "agp" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
 google-android-libraries-mapsplatform-secrets-gradle-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "google-android-libraries-mapsplatform-secrets-gradle-plugin" }
+room = { id = "androidx.room", version.ref = "room" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
 [bundles]
 

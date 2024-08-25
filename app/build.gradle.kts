@@ -1,5 +1,6 @@
 @Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
+    kotlin("kapt")
     alias(libs.plugins.com.android.application)
     alias(libs.plugins.org.jetbrains.kotlin.android)
     alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
@@ -69,6 +70,9 @@ dependencies {
     implementation(libs.fused.location.provider)
     implementation(libs.map.view)
     implementation(libs.androidx.appcompat)
+    implementation(libs.room)
+    implementation(libs.room.ktx)
+    kapt(libs.room.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)

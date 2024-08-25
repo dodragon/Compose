@@ -23,6 +23,7 @@ import com.example.compose.feature.GpsActivity
 import com.example.compose.feature.HorizontalMeasureActivity
 import com.example.compose.feature.ObesityCalculateActivity
 import com.example.compose.feature.StopWatchActivity
+import com.example.compose.feature.todo.ui.TodoActivity
 import com.example.compose.feature.XylophoneActivity
 import com.example.compose.feature.web.WebActivity
 import com.example.compose.ui.theme.ComposeTheme
@@ -49,7 +50,8 @@ class MainActivity : BaseActivity() {
         GalleryActivity::class.java,
         HorizontalMeasureActivity::class.java,
         XylophoneActivity::class.java,
-        GpsActivity::class.java
+        GpsActivity::class.java,
+        TodoActivity::class.java
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
